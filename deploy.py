@@ -8,16 +8,16 @@ import pickle
 import joblib
 
 # Load Data
-df = pd.read_csv(r"C:\Users\manoj\Desktop\job_market\job_market.csv")  # Update path as needed
+df = pd.read_csv(r"job_market.csv")  # Update path as needed
 
 # Load Encoders
 
 
-with open(r"C:\Users\manoj\Desktop\job_market\Job_Title_encoding.pkl", 'rb') as f:
+with open(r"Job_Title_encoding.pkl", 'rb') as f:
     Job_Title_encoding = pickle.load(f)
-with open(r"C:\Users\manoj\Desktop\job_market\Location_encoding.pkl", 'rb') as f:
+with open(r"Location_encoding.pkl", 'rb') as f:
     Location_encoding = pickle.load(f)
-with open(r"C:\Users\manoj\Desktop\job_market\Role_encoding.pkl", 'rb') as f:
+with open(r"Role_encoding.pkl", 'rb') as f:
     Role_encoding = pickle.load(f)
 Skills=['Technical Support',
        'Communication Support', 'Front Desk', 'Medical Support',
