@@ -31,7 +31,7 @@ Skills=['Technical Support',
        'Legal and Compliance']
 
 # Load Model
-model = joblib.load(r"C:\Users\manoj\Desktop\job_market\xgb.pkl")  # Your Random Forest model
+model = joblib.load(r"xgb.pkl")  # Your Random Forest model
 
 # Input DataFrame Columns
 input_columns = ['Job Title', 'Job Experience Required', 'Role', 'Location','Skills'
